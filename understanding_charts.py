@@ -21,11 +21,11 @@ hours_first48hours = hours.loc[0:48, :]
 
 
 
-# plt.scatter(hours_first24hours['instant'], hours_first24hours['count'], marker="+")
-# plt.title("Total Count by hour - First Day")
-# plt.ylabel("Total number of Riders")
-# plt.xlabel("Hour")
-# plt.show()
+plt.scatter(hours_first24hours['instant'], hours_first24hours['count'], marker="+")
+plt.title("Total Count by hour - First Day")
+plt.ylabel("Total number of Riders")
+plt.xlabel("Hour")
+plt.show()
 
 # Communicates the relation between total number of riders w.r.t nth Hour of the day.
 # Interpretations: Simple decisions like surge charging, discounts can be made through this scatterplot. The numbers rise during the typical commute hours and are fairly low early Morning.
@@ -66,10 +66,12 @@ hours_first48hours = hours.loc[0:48, :]
 
 
 #4. Line Chart -- Used to show a trend (over a period of time)
-plt.plot(hours_first48hours['instant'], hours_first48hours['count'])
-plt.xlabel("Hour")
-plt.ylabel("Total No. of Riders")
-plt.title("Rider Count by Hour - for Two Days")
-plt.xticks(range(0,49))
-plt.xlim(0,48)
-plt.show()
+# plt.plot(hours_first48hours['instant'], hours_first48hours['count'])
+# plt.xlabel("Hour")
+# plt.ylabel("Total No. of Riders")
+# plt.title("Rider Count by Hour - for Two Days")
+# plt.xticks(range(0,49))
+# plt.show()
+
+# Interpretation: with the help of Line Graphs, We can easily understand a trend. The graph for these two days show, the peak hours for our riders. ->Cont
+# We can also plot two lines, like one for registered users and one for casual and follow the trends to understand data better.
